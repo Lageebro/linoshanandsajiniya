@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="120" fill="#fcfcfc" />
+  <!-- A thin circular border for elegance -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#b76e79" stroke-width="12" />
+  <!-- Elegant Serif Text -->
+  <text x="256" y="295" font-family="'Playfair Display', Georgia, serif" font-size="200" font-weight="bold" font-style="italic" fill="#800000" text-anchor="middle" dominant-baseline="middle">L&amp;S</text>
+</svg>
