@@ -17,40 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Countdown Timer
-    const targetDate = new Date("April 04, 2026 10:40:00").getTime();
-
-    const daysEl = document.getElementById("days");
-    const hoursEl = document.getElementById("hours");
-    const minutesEl = document.getElementById("minutes");
-    const secondsEl = document.getElementById("seconds");
-
-    if (daysEl && hoursEl && minutesEl && secondsEl) {
-        const updateCountdown = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            if (distance < 0) {
-                clearInterval(updateCountdown);
-                daysEl.innerText = "00";
-                hoursEl.innerText = "00";
-                minutesEl.innerText = "00";
-                secondsEl.innerText = "00";
-                return;
-            }
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            daysEl.innerText = days < 10 ? "0" + days : days;
-            hoursEl.innerText = hours < 10 ? "0" + hours : hours;
-            minutesEl.innerText = minutes < 10 ? "0" + minutes : minutes;
-            secondsEl.innerText = seconds < 10 ? "0" + seconds : seconds;
-        }, 1000);
-    }
-
 
 
     // Guestbook Form Submission & Display
